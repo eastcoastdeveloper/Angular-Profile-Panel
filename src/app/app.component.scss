@@ -1,19 +1,6 @@
 #angular-spa {
   height: 100vh;
 }
-p {
-    font-family: Lato;
-  }
-  #content {
-    background-color: #ffffff;
-    position: fixed;
-    margin-top: 70px;
-    height: calc(100vh - 70px);
-    width: 100%;
-  }
-  .no-scroll {
-    height: 100vh !important;
-  }
   #header {
     height: 70px;
     position: fixed;
@@ -22,10 +9,6 @@ p {
     background-color: #313b3f;
     z-index: 9999;
     transition: all .3s;
-}
-.header-scroll {
-  opacity: .5;
-  height: 30px !important;
 }
 .transparent-bg {
   background-color: transparent;
