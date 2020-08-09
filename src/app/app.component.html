@@ -1,0 +1,12 @@
+<div id="angular-spa">
+
+  <div #headerComponent id="header" class="dark-blue-bg">
+    <app-header></app-header>
+  </div>
+  
+  <div>
+    <div class="transparent-bg" [ngClass]="{'show-bg':profilePanelStatus}"></div>
+    <app-profile-panel></app-profile-panel>
+  </div>
+
+</div>
