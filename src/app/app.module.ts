@@ -7,17 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { ProfilePanelComponent } from './profile-panel/profile-panel.component';
 
 @NgModule({
-  imports: [
-      BrowserModule,
-      FormsModule
-    ],
-  declarations: [
-      AppComponent,
-      HeaderComponent,
-      ProfilePanelComponent
-  ],
-  bootstrap: [
-      AppComponent
-  ]
+  imports: [BrowserModule, FormsModule],
+  declarations: [AppComponent, HeaderComponent, ProfilePanelComponent],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

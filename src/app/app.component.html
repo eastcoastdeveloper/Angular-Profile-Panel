@@ -1,16 +1,13 @@
 <div id="angular-spa">
+  <div #headerComponent id="header" class="dark-blue-bg">
+    <app-header></app-header>
+  </div>
 
-	<div #headerComponent id="header" class="dark-blue-bg">
-		<app-header></app-header>
-	</div>
-
-	<div>
-		<div class="transparent-bg" [ngClass]="{'show-bg':profilePanelStatus}"></div>
-		<app-profile-panel></app-profile-panel>
-	</div>
-
-</div>
-
-<div class="dashboard-link">
-	<a href="https://stackblitz.com/@eastcoastdeveloper" target="_blank">See more of my Stackblitz projects here.</a>
+  <div>
+    <div
+      class="transparent-bg"
+      [ngClass]="{ 'show-bg': profilePanelStatus }"
+    ></div>
+    <app-profile-panel></app-profile-panel>
+  </div>
 </div>

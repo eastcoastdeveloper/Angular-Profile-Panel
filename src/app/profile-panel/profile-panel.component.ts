@@ -4,21 +4,18 @@ import { ProfilePanelService } from '../services/profilePanel.service';
 @Component({
   selector: 'app-profile-panel',
   templateUrl: './profile-panel.component.html',
-  styleUrls: ['./profile-panel.component.scss']
+  styleUrls: ['./profile-panel.component.scss'],
 })
 export class ProfilePanelComponent implements OnInit {
+  profilePanelStatus: boolean;
 
-  profilePanelStatus:boolean;
+  @ViewChild('accordionParent', { static: false }) accordionParent: ElementRef;
 
-  @ViewChild('accordionParent', {static:false}) accordionParent:ElementRef;
-
-  constructor(
-    private profileService: ProfilePanelService
-  ) { }
+  constructor(private profileService: ProfilePanelService) {}
 
   ngOnInit(): void {
-    this.profileService.currentVal.subscribe(currentVal => this.profilePanelStatus = currentVal);
+    this.profileService.currentVal.subscribe(
+      (currentVal) => (this.profilePanelStatus = currentVal)
+    );
   }
-
-
 }

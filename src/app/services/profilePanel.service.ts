@@ -2,19 +2,18 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ProfilePanelService {
-
-  someValue:boolean
+  someValue: boolean;
 
   private initialValue = new BehaviorSubject(this.someValue);
   currentVal = this.initialValue.asObservable();
 
-  changeValue(newValue:boolean){
+  changeValue(newValue: boolean) {
     this.initialValue.next(newValue);
-    return newValue
+    return newValue;
   }
 
-  constructor() { }
+  constructor() {}
 }

@@ -1,16 +1,14 @@
-
-
 #profile-panel {
-    background-color: white;
-    position: absolute;
-    width: 300px;
-    transition: right .3s;
-    right: -350px;
-    margin-top: 70px;
-    height: calc(100vh - 70px);
-    font: normal 16px sans-serif;
-    text-align: center;
+  background-color: white;
+  position: absolute;
+  width: 300px;
+  transition: right 0.3s;
+  right: -350px;
+  margin-top: 70px;
+  height: calc(100vh - 70px);
+  font: normal 16px sans-serif;
+  text-align: center;
 }
 .show-panel {
-    right: 0 !important;
+  right: 0 !important;
 }
