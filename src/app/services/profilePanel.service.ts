@@ -5,7 +5,7 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root',
 })
 export class ProfilePanelService {
-  someValue: boolean;
+  someValue?: boolean;
 
   private initialValue = new BehaviorSubject(this.someValue);
   currentVal = this.initialValue.asObservable();
