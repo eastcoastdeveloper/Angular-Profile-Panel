@@ -12,5 +12,10 @@ header {
     transform: translateY(-50%);
     right: 20px;
     cursor: pointer;
+    overflow: hidden;
+    img {
+      width: 100%;
+      transform: scale(.9);
+    }
   }
 }
