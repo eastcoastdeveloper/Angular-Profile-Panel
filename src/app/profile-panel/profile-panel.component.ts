@@ -9,8 +9,6 @@ import { ProfilePanelService } from '../services/profilePanel.service';
 export class ProfilePanelComponent implements OnInit {
   profilePanelStatus: boolean;
 
-  @ViewChild('accordionParent', { static: false }) accordionParent: ElementRef;
-
   constructor(private profileService: ProfilePanelService) {}
 
   ngOnInit(): void {
